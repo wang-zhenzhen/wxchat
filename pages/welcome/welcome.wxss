@@ -1,0 +1,36 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+page{
+  background-color: #b3d4db;
+  height: 100%;
+}
+.user-avatar{
+ width:180rpx;
+ height: 180rpx;
+ margin-top:160rpx;
+ border-radius: 90rpx;
+ border:1rpx solid #2d3a3d;
+ /* color:rgb(248, 196, 205) */
+}
+.user-name{
+  font-size:32rpx;
+  font-weight: bold;
+  margin-top:60rpx;
+}
+.moto{
+  font-size:22rpx;
+  font-weight: bold;
+}
+.moto-container{
+  height:60rpx;
+  width:200rpx;
+  border:1rpx solid #2d3a3d;
+  /* border:1rpx solid #0b4f77; */
+  text-align: center;
+  border-radius:10rpx;
+  margin-top:200rpx;
+  color:#2d3a3d;
+}
