@@ -26,11 +26,19 @@ Page({
       complete: function(res) {},
     })
   },
+  onSwiperItemTap:function(event){
+    // 获取data-id的值
+    var id= event.currentTarget.dataset.id
+    // console.log(event)
+    wx:wx.navigateTo({
+      url: 'post-detail/post-detail?id='+id
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**
