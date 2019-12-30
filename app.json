@@ -5,12 +5,7 @@
     "pages/posts/post-detail/post-detail"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#2a626e",
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "鲜果时代",
-    "backgroundColor": "pink",
-    "backgroundTextStyle": "light",
-    "enablePullDownRefresh": false
+    "navigationBarBackgroundColor": "#0b4f77"
   },
   "sitemapLocation": "sitemap.json"
 }

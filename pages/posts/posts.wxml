@@ -1,15 +1,15 @@
 <import src="post-item/post-item-template.wxml"/>
 <view>
   <swiper indicator-dots='true' indicator-color='#2a626e' autoplay='true' interval='2000'>
-    <swiper-item><image src="/images/lk.jpg"></image></swiper-item>
-    <swiper-item><image src="/images/mg.jpg"></image></swiper-item>
-    <swiper-item><image src="/images/p2.jpg"></image></swiper-item>
-    <swiper-item><image src="/images/trim.jpg"></image></swiper-item>
-    <swiper-item><image src="/images/xg.jpg"></image></swiper-item>
-    <swiper-item><image src="/images/xj.jpg"></image></swiper-item>
-    <swiper-item><image src="/images/xjj.jpg"></image></swiper-item>
+    <swiper-item><image src="/images/picture/lk.jpg"></image></swiper-item>
+    <swiper-item><image src="/images/picture/mg.jpg"></image></swiper-item>
+    <swiper-item><image src="/images/picture/p2.jpg"></image></swiper-item>
+    <swiper-item><image src="/images/picture/trim.jpg"></image></swiper-item>
+    <swiper-item><image src="/images/picture/xg.jpg"></image></swiper-item>
+    <swiper-item><image src="/images/picture/xj.jpg"></image></swiper-item>
+    <swiper-item><image src="/images/picture/xjj.jpg"></image></swiper-item>
   </swiper>
-  <block wx:for="{{post_key}}" wx:for-item="item" wx:key="1">
+  <block wx:for="{{post_key}}" wx:for-item="item" wx:key="{{item.id}}">
     <view catchtap='onPostTap' data-id="{{item.id}}">
       <template is="postItem" data="{{...item}}" />
     </view>
