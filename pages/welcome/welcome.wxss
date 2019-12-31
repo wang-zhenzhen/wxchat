@@ -32,5 +32,5 @@ page{
   text-align: center;
   border-radius:10rpx;
   margin-top:200rpx;
-  color:#2d3a3d;
+  color:#304979;
 }

@@ -1,10 +1,14 @@
 Page({
   onTap:function(){
-    wx.navigateTo({
-      url: '../posts/posts'
+    console.log('errrrrrrr')
+    // wx.navigateTo({
+    //   url: '../posts/posts'
+    // })
+    wx.switchTab({
+      url: '../posts/posts',
     })
     // 跳转后无返回按钮
-    // wx:wx.redirectTo({
+    // wx.redirectTo({
     //   url: '../posts/posts',
     //   success: function(res) {},
     //   fail: function(res) {},

@@ -3,7 +3,7 @@ App({
     g_isPlayingMusic:false,
     g_currentMusicPostId:null,
     // doubanBase:"https://api.douban.com"
-    doubanBase:"https://t.yushu.im"
+    doubanBase:"https://douban.uieee.com"
   },
 })
 // App({
