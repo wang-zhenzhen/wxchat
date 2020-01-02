@@ -7,7 +7,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    movies:[],
     navigateTitle: "",
+    requestUrl:"",
+    totalCount:0,
+    isEmpty:true,
   },
 
   /**
@@ -31,8 +35,17 @@ Page({
         dataUrl = app.globalData.doubanBase + "/v2/movie/top250";
         break;
     }
+    this.setData({
+      requestUrl:dataUrl
+    })
     // 调公共的请求豆瓣的方法
     util.http(dataUrl, this.processDoubanData)
+  },
+  // 下拉加载更多
+  onScrollLower:function(event){
+    console.log('scrolll......')
+    var nextUrl = this.data.requestUrl+"?start="+this.data.totalCount+"&count=20"
+    util.http(nextUrl, this.processDoubanData)
   },
   // 回调
   processDoubanData: function (movieDouban) {
@@ -52,14 +65,20 @@ Page({
         movieId: subject.id
       }
       movies.push(temp)
+      var totalMovies = {}
+      if(!this.data.isEmpty){
+        totalMovies = this.data.movies.concat(movies);
+      }else{
+        totalMovies = movies;
+        this.setData({
+          isEmpty:false
+        })
+      }
     }
-    var readyData = {};
-    // readyData[settedKey]:settedKey是data中的对象属性
-    readyData= {
-      // movies是数组
-      movies: movies,
-    };
-    this.setData(readyData)
+    this.setData({
+      movies:totalMovies
+    })
+    this.data.totalCount+=20
   },
   onReady: function (event) {
     var navigateTitle = this.data.navigateTitle
