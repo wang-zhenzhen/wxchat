@@ -5,3 +5,32 @@
 .movies-template{
   margin-bottom: 30rpx;
 }
+.search{
+  width:100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f2f2f2;
+}
+.search input{
+  height:100%;
+  width:600rpx;
+  margin-left:20rpx;
+  font-size:28rpx;
+}
+.search-img{
+  margin:auto 0 auto 20rpx;
+}
+.placeholder{
+  font-size:14px;
+  color:#d1d1d1;
+  margin-left:20rpx;
+}
+.search-panel{
+  position: absolute;
+  top:80rpx;
+}
+.clear-img:active{
+  color:red;
+}

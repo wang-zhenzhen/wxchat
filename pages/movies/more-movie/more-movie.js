@@ -84,6 +84,7 @@ Page({
     })
     // 关闭加载
     wx.hideNavigationBarLoading()
+    wx.stopPullDownRefresh()
     // 在当前条数的基础上加20
     this.data.totalCount+=20
   },
@@ -94,4 +95,15 @@ Page({
       title: navigateTitle,
     })
   },
+  // 下拉刷新
+  enablePullDownRefresh:function(event){
+    var nextUrl = this.data.requestUrl+"?start=0"+"&count=20"
+    this.setData({
+      isEmpty:true,
+      movies:[]
+    })
+    util.http(nextUrl, this.processDoubanData)
+    // 打开加载
+    wx.showNavigationBarLoading()
+  }
 })

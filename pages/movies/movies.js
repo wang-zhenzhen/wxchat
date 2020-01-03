@@ -5,6 +5,8 @@ Page({
     inTheaters:{},
     comingSoon:{},
     top250:{},
+    containerShow:true,
+    searchPanelShow:false,
   },
   onLoad:function(event){
     // 正在热映
@@ -68,5 +70,22 @@ Page({
     wx.navigateTo({
       url: 'more-movie/more-movie?category='+category,
     })
+  },
+  onBindFocus(event){
+    console.log(event, 'focus.....')
+    this.setData({
+      containerShow:false,
+      searchPanelShow:true,
+    })
+  },
+  onBindChange(event){
+    console.log(event, 'change.....')
+    this.setData({
+      containerShow:true,
+      searchPanelShow:false,
+    })
+  },
+  ontapclear(event){
+    console.log(event, 'clear.....')
   },
 })
