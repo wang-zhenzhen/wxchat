@@ -1,10 +1,14 @@
 {
   "pages": [
     "pages/welcome/welcome",
+    "pages/operate/operate",
+    "pages/editor/editor",
     "pages/posts/posts",
     "pages/posts/post-detail/post-detail",
     "pages/movies/movies",
-    "pages/movies/more-movie/more-movie"
+    "pages/movies/more-movie/more-movie",
+    "pages/movies/movie-detail/movie-detail"
+    
   ],
   "window": {
     "navigationBarBackgroundColor": "#0b4f77"
@@ -24,6 +28,12 @@
         "text": "电影",
         "iconPath": "/images/tab/dianying.png",
         "selectedIconPath": "/images/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/operate/operate",
+        "text": "组件",
+        "iconPath": "/images/tab/ciwei.png",
+        "selectedIconPath": "/images/tab/ciwei_hl.png"
       }
     ]
   },

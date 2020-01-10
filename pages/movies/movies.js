@@ -5,6 +5,7 @@ Page({
     inTheaters:{},
     comingSoon:{},
     top250:{},
+    searchResult:{},
     containerShow:true,
     searchPanelShow:false,
   },
@@ -72,20 +73,31 @@ Page({
     })
   },
   onBindFocus(event){
-    console.log(event, 'focus.....')
     this.setData({
       containerShow:false,
       searchPanelShow:true,
     })
   },
-  onBindChange(event){
-    console.log(event, 'change.....')
+  onBindBlur(event){
+    this.setData({
+      searchResult:{}
+    })
+    var text = event.detail.value;
+    var paramUrl = app.globalData.doubanBase+"/v2/movie/search?q="+text;
+    this.getMovieListData(paramUrl, "searchResult", "");
+  },
+  onCancelImgTap(event){
     this.setData({
       containerShow:true,
       searchPanelShow:false,
     })
   },
-  ontapclear(event){
-    console.log(event, 'clear.....')
+  // 跳转到详情页
+  onTapDetail(event){
+    console.log(event, 'event....')
+    var movieId = event.currentTarget.dataset.movieid
+    wx.navigateTo({
+      url: '/pages/movies/movie-detail/movie-detail?movieId='+movieId,
+    })
   },
 })

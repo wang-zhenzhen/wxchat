@@ -47,6 +47,14 @@ Page({
     // 打开加载
     wx.showNavigationBarLoading()
   },
+  // 跳转到详情页
+  onTapDetail(event){
+    console.log(event, 'event....')
+    var movieId = event.currentTarget.dataset.movieid
+    wx.navigateTo({
+      url: '/pages/movies/movie-detail/movie-detail?movieId='+movieId,
+    })
+  },
   // 回调
   processDoubanData: function (movieDouban) {
     var movies = [];

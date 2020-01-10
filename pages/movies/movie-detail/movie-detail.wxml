@@ -1,0 +1,51 @@
+<import src="../stars/stars-template.wxml"></import>
+<view>
+  <!-- 电影图 -->
+  <view class="movie-detail-header">
+    <view class="movie-title">大话西游之大圣娶亲</view>
+    <view class="movie-address">香港 . 1995</view>
+    <!-- <view class="movie-detail-num">
+      <text class="totalnum">19575</text>
+      <text class="textnum">人喜欢</text>
+      <text class="totalnum">756756</text>
+      <text>条评论</text>
+    </view> -->
+  </view>
+  <view class="movie-picture">
+    <image src="../../../images/picture/wukong2.jpg"></image>
+  </view>
+  <!-- 电影演员介绍 -->
+  <view class="introduce-container">
+    <text class="movie-detail-name">西游记大结局之仙履奇缘</text>
+    <view class="movie-detail-item">
+      <text class="star-text">评分</text>
+      <template is="starsTemplate" data="{{...starsObject}}"></template>
+    </view>
+    <view class="movie-detail-item">
+      <text  class="star-text">导演</text>
+      <text>刘镇伟</text>
+    </view>
+    <view class="movie-detail-item"> 
+      <text class="star-text">影人</text>
+      <text>周星驰/吴孟达/朱茵/蔡少芬</text>
+    </view>
+    <view class="movie-detail-item">
+      <text class="star-text">类型</text>
+      <text>动作、冒险、喜剧</text>
+    </view>
+  </view>
+  <!-- 剧情介绍 -->
+  <view class="introduce-container">
+    <text class="star-text" style="margin-left:10rpx;margin-top:30rpx;">剧情介绍</text>
+    <text class="introduce-text">这部剧是由周星驰彩星电影公司和西安电影制片厂联合摄制的爱情悲喜剧电影，由刘镇伟执导，周星驰、朱茵、吴孟达、莫文蔚等主演。《大话西游》由《月光宝盒》和《大圣娶亲》两部组成，讲述了一个跨越时空的悲喜交加的爱情故事。影片于1995年在中国香港和内地上映，直到1997年后才开始在内地各个高校和网络上流传并迅速走红。影片上映20年之际，《大话西游》于2014年10月24日在内地重映</text>
+  </view>
+  <!-- 演员照片 -->
+  <view class="introduce-container">
+    <text class="star-text" style="margin-left:10rpx;margin-top:30rpx;">影人</text>
+    <view class="star-show">
+      <block wx:for="{{imgageArr}}" wx:for-item="imgUrl">
+        <image mode="widthFix" src="{{imgUrl}}"></image>
+      </block>
+    </view>
+  </view>
+</view>

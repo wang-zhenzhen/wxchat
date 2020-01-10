@@ -26,11 +26,27 @@ page{
 }
 .moto-container{
   height:60rpx;
-  width:200rpx;
-  border:1rpx solid #2d3a3d;
+  width:460rpx;
+  border:1rpx solid #ddd;
   /* border:1rpx solid #0b4f77; */
   text-align: center;
   border-radius:10rpx;
-  margin-top:200rpx;
+  margin-top:40rpx;
   color:#304979;
+}
+.moto-container:active{
+  border:1rpx solid rgb(134, 130, 130);
+  background-color: rgb(194, 231, 228);
+}
+.son-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.son-container input{
+  border-bottom: 1rpx solid #ddd;
+}
+.message-container{
+  margin:30rpx;
+  text-align: center;
 }

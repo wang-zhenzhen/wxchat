@@ -1,0 +1,42 @@
+<!-- 功能联系 -->
+<view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="container-sex">
+      姓名：
+      <input name="name" placeholder="请输入姓名" style="border-bottom:1rpx solid #ddd"/>
+    </view>
+    <view class="container-sex">
+      性别：
+      <radio-group name="sex">
+        <radio style="margin-right:10rpx;" color="#b3d4db" value="1">男</radio>
+        <radio value="2" color="#b3d4db">女</radio>
+    </radio-group>
+    </view>
+    <view class="container">
+      是否同意协议：<switch name="switch" checked="{{false}}" type="checkbox" color="#b3d4db" bindchange="onBindChange">同意</switch>
+    </view>
+    <!-- <view class="container">
+      <slider name="slider" value="{{sliderValue}}" selected-color="#b3d4db" show-value="{{true}}"></slider>
+    </view> -->
+    <view class="container-sex">
+      爱好：
+        <checkbox-group name="checkbox1" bindchange="checkboxChange">
+          <block wx:for="{{checkboxArray}}" wx:for-item="item" wx:key="{{item.id}}">
+            <checkbox color="#b3d4db" value="{{item.value}}">{{item.name}}</checkbox>
+          </block>
+        </checkbox-group>
+    </view>
+   
+    <view class="container">
+      <view>地图：</view>
+      <map longitude="103.87" latitude="35.38" scale="20" style="width:100%;height:300rpx;"></map>
+    </view>
+    <view class="container">
+      <view class="release-text" bindtap="releaseWordTap">发表文章</view>
+    </view>
+    <view>
+      <button formType="submit" style="width:94%;background-color:#b3d4db;margin-bottom:10rpx;" plain="{{false}}" bindtap="buttonTap" loading="{{buttonLoading}}">提交</button>
+      <button formType="reset" bindtap="buttonCancelTap" style="width:94%;background-color:#ebc3c8;margin-bottom:10rpx;">重置</button>
+    </view>
+  </form>
+</view>

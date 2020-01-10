@@ -1,0 +1,17 @@
+.container{
+  margin:20rpx;
+}
+.container-sex{
+  margin:20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:100%;
+}
+.release-text{
+  margin-left:15rpx;
+  color:#b3d4db;
+}
+.release-text:active{
+  color:#720e0e;
+}

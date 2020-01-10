@@ -1,0 +1,6 @@
+<view>
+  <view class="container-editor">
+    <editor placeholder="请输入内容"></editor>
+  </view>
+  <button bindtap="releaseTap" class="release-button">发表</button>
+</view>

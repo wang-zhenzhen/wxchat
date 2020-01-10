@@ -1,0 +1,13 @@
+.container-editor{
+  margin:20rpx;
+  border:2rpx solid #b3d4db;
+}
+.release-button{
+  width:94%;
+  background-color: #b3d4db;
+  color:#ffffff;
+}
+.release-button:active{
+  background-color: #9abdc4;
+  color:black;
+}

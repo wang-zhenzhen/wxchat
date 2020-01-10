@@ -1,0 +1,88 @@
+@import "../stars/stars-template.wxss";
+.movie-detail-header{
+  background: url('http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b999a9014c086e06b273602204087bf40bd1cb84.jpg') no-repeat;
+  height: 300rpx;
+  overflow: hidden;
+  background-size:100% 100%;
+  margin-bottom: 30rpx;
+}
+.movie-title{
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 50rpx;
+  font-weight: bold;
+  color:rgb(134, 134, 134);
+  width:100%;
+}
+.textnum{
+  margin-right:30rpx;
+}
+.totalnum{
+  font-weight: bold;
+  color:red;
+  margin-right:5rpx;
+}
+.movie-detail-num{
+  /* text-align: center; */
+  margin-top: 40rpx;
+  margin-left: 80rpx;
+}
+.movie-address{
+  text-align: center;
+  font-size: 30rpx;
+  color:rgb(134, 134, 134);
+  margin-top: 30rpx;
+}
+.movie-picture image{
+  width:180rpx;
+  height:260rpx;
+  position: absolute;
+  right:30rpx;
+  top:200rpx;
+  /* border-radius: 5px; */
+  /* border:6rpx solid #F4A460; */
+}
+.movie-detail-name{
+  font-size:30rpx;
+  font-weight: 600;
+  margin-left:30rpx;
+}
+.movie-detail-item{
+  margin-left:30rpx;
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+}
+.introduce-container{
+  border-bottom: 2rpx  solid rgb(236, 232, 232);
+  padding-bottom:30rpx;
+  margin:5rpx;
+  display: flex;
+  flex-direction: column;
+}
+.star-text{
+  color: rgb(194, 187, 181);
+  margin-right:20rpx;
+}
+.movie-detail-introduce{
+  border-bottom: 2rpx  solid rgb(236, 232, 232);
+}
+.introduce-text{
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  word-spacing: 10rpx;
+}
+.introduce-text-title{
+  margin-left:10rpx;
+}
+.star-show{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.star-show image{
+  margin:5rpx;
+  width:200rpx;
+  white-space: nowrap;
+}
