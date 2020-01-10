@@ -34,10 +34,10 @@ page{
   margin-top:40rpx;
   color:#304979;
 }
-.moto-container:active{
+/* .moto-container:active{
   border:1rpx solid rgb(134, 130, 130);
   background-color: rgb(194, 231, 228);
-}
+} */
 .son-container{
   display: flex;
   flex-direction: row;
@@ -49,4 +49,21 @@ page{
 .message-container{
   margin:30rpx;
   text-align: center;
+}
+.login-button{
+  display: flex;
+  flex-direction: row;
+  margin-top:20rpx;
+}
+.login-button button{
+  font-size:30rpx;
+  background-color: #b3d4db;
+}
+.login-button button::after {
+  border: none;
+  margin-top:20rpx;
+  width:50%;
+  border:0rpx;
+  outline:none;
+  width:100%;
 }

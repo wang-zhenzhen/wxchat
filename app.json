@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/welcome/welcome",
+    "pages/register/register",
     "pages/operate/operate",
     "pages/editor/editor",
     "pages/posts/posts",
@@ -8,7 +9,6 @@
     "pages/movies/movies",
     "pages/movies/more-movie/more-movie",
     "pages/movies/movie-detail/movie-detail"
-    
   ],
   "window": {
     "navigationBarBackgroundColor": "#0b4f77"

@@ -1,0 +1,21 @@
+
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="container-item">
+      <text style="color:#ea986c;font-size:40rpx;" class="iconfont icon-account"></text>
+      <input name="admin" value="{{admin}}" placeholder="请输入手机号" style="border-bottom:1rpx solid #ddd"/>
+    </view>
+    <view class="container-item">
+      <text style="color:#ea986c;font-size:40rpx;" class="iconfont icon-lock"></text>
+      <input name="password" value="{{password}}" placeholder="请输入密码" style="border-bottom:1rpx solid #ddd"/>
+    </view>
+    <view class="container-item">
+      <text style="color:#ea986c;font-size:40rpx;" class="iconfont icon-lock"></text>
+      <input name="confirmgPassword" value="{{confirmgPassword}}" placeholder="请再次确认密码" style="border-bottom:1rpx solid #ddd"/>
+    </view>
+    <view class="container-item">
+      <button size="mini" formType="submit">确认</button>
+      <button size="mini" formType="reset">取消</button>
+    </view>
+  </form>
+</view>

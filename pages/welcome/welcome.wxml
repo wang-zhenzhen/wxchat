@@ -1,15 +1,17 @@
 <view class="container">
   <image class="user-avatar" src="/images/picture/avatar.png"></image>
-  <view class="message-container">
-    <view class="son-container">
-      账号：<input placeholder="输入账号" />
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="message-container">
+      <view class="son-container">
+        账号：<input name="admin" placeholder="输入账号" />
+      </view>
+      <view class="son-container">
+        密码：<input name="password" placeholder="输入密码" />
+      </view>
+      <view class="login-button">
+        <button formType="submit">登录</button>
+        <button formType="reset">注册</button>
+      </view>
     </view>
-    <view class="son-container">
-      密码：<input placeholder="输入密码" />
-    </view>
-    <view class="moto-container" bind:tap="onTap">
-      <text class="moto">登录</text>
-    </view>
-  </view>
-  
+  </form> 
 </view>
